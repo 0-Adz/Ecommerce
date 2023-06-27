@@ -1,0 +1,49 @@
+.orderSuccess {
+    margin: auto;
+    text-align: center;
+    padding: 10vmax;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .orderSuccess > svg {
+    font-size: 7vmax;
+    color: #4BB543;
+  }
+  .orderSuccess > p {
+    font-size: 1.5vmax;
+  }
+  .orderSuccess > a {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border: none;
+    padding: 1vmax 3vmax;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 1vmax;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    margin: 2vmax;
+    transition: all 0.5s;
+  }
+  .orderSuccess> a:hover{
+    transform: scale(104%);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .orderSuccess > a {
+      padding: 3vw 6vw;
+      font-size:4vw;
+      margin: 2vmax;
+    }
+  
+    .orderSuccess > svg {
+      font-size: 20vw;
+    }
+    .orderSuccess > p {
+      margin: 2vmax;
+      font-size: 5vw;
+    }
+  }

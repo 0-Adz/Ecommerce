@@ -1,0 +1,213 @@
+.emptyCart {
+  margin: auto;
+  text-align: center;
+  padding: 10vmax;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.emptyCart > svg {
+  font-size: 4vmax;
+  color: tomato;
+}
+.emptyCart > p {
+  font-size: 1.5vmax;
+  font-weight: 0;
+  color: grey;
+  margin-top: 2%;
+
+}
+.emptyCart > a {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  margin-top: 2%;
+  border: none;
+  padding: 1vmax 3vmax;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 0.9vmax;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.emptyCart > a:hover{
+  transform: scale(104%);
+}
+
+.cartPage {
+    padding: 5vmax;
+}
+.cartPage > h2 {
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2vmax;
+    padding: 1vmax;
+    transform: translateX(4%);
+    border-bottom: 0.1vmax solid black;
+}
+
+.cartHeader {
+    width: 90%;
+    box-sizing: border-box;
+    margin: auto;
+    color: #21262d;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1vmax;
+    padding-top: 1%;
+  }
+  .cartHeader > p {
+    margin: 10px;
+  }
+  .cartHeader > p:last-child {
+    text-align: end;
+  }
+  .cartContainer {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4fr 0.96fr 0.95fr;
+  }
+  .cartInput {
+    display: flex;
+    align-items: center;
+    height: 6vmax;
+  }
+  .cartInput > button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 0.4vmax;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+  }
+  .cartInput > button:hover {
+    background-color: rgba(0, 0, 0, 0.767);
+  }
+  .cartInput > input {
+    border: none;
+    padding: 0.5vmax;
+    width: 0.8vmax;
+    text-align: center;
+    outline: none;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8vmax;
+    color: rgba(0, 0, 0, 0.74);
+  }
+  .cartSubtotal {
+    display: flex;
+    padding: 2vmax;
+    height: 6vmax;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1vmax;
+    justify-content: flex-end;
+    color: rgba(0, 0, 0, 0.753);
+  }
+  .cartGrossTotal {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+  }
+  .cartGrossTotalBox {
+    border-top: 0.1vmax solid black;
+    margin: 1vmax 4vmax;
+    box-sizing: border-box;
+    padding: 2vmax 0;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1vmax;
+    display: flex;
+    justify-content: space-between;
+  }
+  .checkOutBtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .checkOutBtn > button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 0.5vmax 2vmax;
+    width: 50%;
+    font-weight: 400;
+    font-size: 1vmax;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 1vmax 4vmax;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s;
+
+  }
+  .checkOutBtn > button:hover {
+    background-color: #21262d;
+  }
+  @media screen and (max-width: 600px) {
+    .cartPage {
+      padding: 1vmax;
+      min-height: 60vh;
+      margin-top: 8%;
+    }
+    .cartPage > h2 {
+        font-size: 2.3vmax;
+        transform: translateX(0%);
+    }
+  
+    .cartHeader {
+      width: 100%;
+      font-size:1.7vmax;
+      grid-template-columns: 3fr 1fr 1fr;
+    }
+  
+    .cartContainer {
+      width: 100%;
+      grid-template-columns: 3fr 1fr 1fr;
+    }
+  
+    .cartInput {
+      height: 20vmax;
+    }
+  
+    .cartInput > button {
+      padding: 1.5vmax;
+    }
+  
+    .cartInput > input {
+      width: 2vmax;
+      padding: 1.5vmax;
+      font-size:1.8vmax;
+    }
+  
+    .cartSubtotal {
+      padding: 1.5vmax;
+      height: 20vmax;
+      font-size:2vmax;
+    }
+  
+    .cartGrossTotal {
+      display: grid;
+      grid-template-columns: 0fr 2fr;
+    }
+  
+    .cartGrossTotalBox {
+      padding: 2vmax;
+      font-size:2vmax;
+
+    }
+  
+    .checkOutBtn > button {
+      padding: 2vmax 4vmax;
+      width: 100%;
+      font-size:2vmax;
+    }
+  }
+
+  
+  
+  

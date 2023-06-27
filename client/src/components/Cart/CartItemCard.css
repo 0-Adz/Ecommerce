@@ -1,0 +1,62 @@
+.CartItemCard{
+    display: flex;
+    padding: 1vmax;
+    height: 8vmax;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+.CartItemCard> img{
+    width: 5vmax;
+}
+.CartItemCard>div {
+    display: flex;
+    margin: 0.3vmax 1vmax;
+    flex-direction: column;
+}
+.CartItemCard> div>a{
+    font-weight: 400;
+    font-size: 0.9vmax;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #21262d;
+    text-decoration: none;
+    
+}
+.CartItemCard>div>span{
+    font-weight: 400;
+    font-size: 0.9vmax;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(18, 17, 17, 0.815);
+
+}
+.CartItemCard > div > p {
+    color: tomato;
+    font-weight: 400;
+    font-size: 0.8vmax;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    cursor: pointer;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .CartItemCard {
+      padding: 3vmax;
+      height: 25vmax;
+    }
+    .CartItemCard > img {
+      width: 10vmax;
+    }
+  
+    .CartItemCard > div {
+      margin: 1vmax 2vmax;
+    }
+  
+    .CartItemCard > div > a {
+      font-size: 2vmax;
+    }
+  
+    .CartItemCard > div > span {
+      font-size: 1.9vmax;
+    }
+  
+    .CartItemCard > div > p {
+      font-size: 1.5vmax;
+    }
+  }

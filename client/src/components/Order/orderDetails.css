@@ -1,0 +1,132 @@
+.orderDetailsPage {
+    background-color: white;
+  }
+  
+  .orderDetailsContainer > h1 {
+    font-weight: 400;
+    font-size: 2vmax;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 4vmax 0;
+    color: tomato;
+  }
+  
+  .orderDetailsContainer {
+    padding: 5vmax;
+    padding-bottom: 0%;
+  }
+  
+  .orderDetailsContainer > p {
+    font-weight: 400;
+    font-size: 1.8vmax;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .orderDetailsContainerBox,
+  .orderDetailsCartItemsContainer {
+    margin: 2vmax;
+  }
+  
+  .orderDetailsContainerBox > div {
+    display: flex;
+    margin: 1vmax 0;
+  }
+  
+  .orderDetailsContainerBox > div > p {
+    font-weight: 600;
+    font-size: 1.1vmax;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+  }
+  .orderDetailsContainerBox > div > span {
+    margin: 0 1vmax;
+    font-weight: 400;
+    font-size: 1.1vmax;      
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #575757;
+  }
+  
+  .orderDetailsCartItems > p {
+    font-weight: 400;
+    font-size: 1.8vmax;      
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .orderDetailsCartItems {
+    padding: 2vmax 5vmax;
+    border-top: 1px solid rgba(0, 0, 0, 0.164);
+  }
+  
+  .orderDetailsCartItemsContainer > div {
+    display: flex;
+    font-weight: 400;
+    font-size: 1.1vmax;      
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: center;
+    margin: 2vmax 0;
+  }
+  
+  .orderDetailsCartItemsContainer > div > img {
+    width: 3vmax;
+  }
+  
+  .orderDetailsCartItemsContainer > div > a {
+    color: #575757;
+    margin: 0 2vmax;
+    width: 60%;
+    text-decoration: none;
+  }
+  
+  .orderDetailsCartItemsContainer > div > span {
+    font-weight: 400;
+    font-size: 1.1vmax;      
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #5e5e5e;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .orderDetailsContainer > h1 {
+        font-size: 5.5vw;
+    }
+    .orderDetailsContainer > p {
+        font-weight: 400; 
+        font-size: 5.5vw;
+    }
+  
+    .orderDetailsContainerBox > div {
+      margin: 6vw 0;
+    }
+  
+    .orderDetailsContainerBox > div > p {
+        font-weight: 500; 
+        font-size: 3.5vw;
+   }
+    .orderDetailsContainerBox > div > span {
+        font-weight: 400; 
+        font-size: 3.5vw;
+    }
+  
+    .orderDetailsCartItems > p {
+        font-weight: 400; 
+        font-size: 5.5vw;
+    }
+  
+    .orderDetailsCartItemsContainer > div {
+        font-weight: 400; 
+        font-size: 3.5vw;
+      margin: 4vw 0;
+    }
+  
+    .orderDetailsCartItemsContainer > div > img {
+      width: 10vw;
+    }
+  
+    .orderDetailsCartItemsContainer > div > a {
+      margin: 2vw;
+      width: 30%;
+    }
+  
+    .orderDetailsCartItemsContainer > div > span {
+        font-weight: 400; 
+        font-size: 4vw;
+    }
+  }

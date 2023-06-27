@@ -1,0 +1,85 @@
+.myOrdersPage {
+    width: 100vw;
+    max-width: 100%;
+    padding: 3.5vmax 3vmax;
+    box-sizing: border-box;
+    background-color: white;
+    position: fixed;
+    top: 3.5vmax;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  #myOrdersHeading {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.3vmax;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0.5vmax;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+    background-color: rgb(44, 44, 44);
+  }
+  
+  .myOrdersTable {
+    background-color: white;
+  }
+  .myOrdersTable div {
+    font-weight: 400;
+    font-size: 1vmax;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
+    color: rgba(0, 0, 0, 0.678);
+  }
+  
+  .myOrdersTable a {
+    color: rgba(0, 0, 0, 0.527);
+    transition: all 0.5s;
+  }
+  
+  .myOrdersTable a:hover {
+    color: tomato;
+  }
+  
+  .MuiDataGrid-columnHeader {
+    background-color: rgb(44, 44, 44);
+    padding: 1vmax !important;
+  }
+  
+  .MuiDataGrid-columnHeader div {
+    color: rgb(255, 255, 255);
+    font-weight: 500 1.1vmax  !important;
+  }
+  
+  .MuiDataGrid-iconSeparator {
+    display: none !important;
+  }
+  @media screen and (max-width: 600px) {
+    .myOrdersPage {
+      padding: 7.5vmax 0;
+      height: 104vh;
+    }
+  
+    #myOrdersHeading {
+      font-weight: 400; 
+      font-size: 2.2vmax;
+      padding: 4vw;
+    }
+  
+    .myOrdersTable div {
+      font-weight: 400; 
+      font-size: 4vw;
+    }
+  
+    .MuiDataGrid-columnHeader {
+      padding: 20px !important;
+    }
+  
+    .MuiDataGrid-columnHeader div {
+      font-weight: 500; 
+      font-size: 5vw;
+    }
+  }
+  
