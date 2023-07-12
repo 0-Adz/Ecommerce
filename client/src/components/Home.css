@@ -1,5 +1,9 @@
 .banner {
-    background-image: linear-gradient(to right, #12161d,#0f172a);
+    /* background-image: linear-gradient(to right, #12161d,#0f172a); */
+    background-image: url(./images/background.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -23vmax;
     height: 100vmin;
     display:flex;
     flex-direction: column;
@@ -11,7 +15,7 @@
 
 .banner > h1 {
     margin: 4vmax;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 2.5vmax;
     font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }

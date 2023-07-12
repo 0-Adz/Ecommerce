@@ -14,7 +14,7 @@ import Products from "./components/Product/Products";
 import Search from "./components/Product/Search";
 import LoginSignUp from "./components/User/LoginSignUp";
 import Profile from "./components/User/Profile";
-import store from "./Store";
+import Store from "./Store";
 import { loadUser } from "./actions/userActions";
 import UserOptions from "./components/layout/Header/UserOptions";
 import { useSelector } from "react-redux";
@@ -58,7 +58,7 @@ function App() {
   }
 
   useEffect(() => {
-    store.dispatch(loadUser());
+    Store.dispatch(loadUser());
     getStripeApiKey();
   }, []);
   // window.addEventListener("contextmenu", (e) => e.preventDefault());

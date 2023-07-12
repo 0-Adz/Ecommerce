@@ -1,4 +1,4 @@
-const app=require('./app');
+const app = require('./app');
 
 const dotenv = require('dotenv');
 const cloudinary = require("cloudinary");
@@ -13,7 +13,9 @@ process.on("uncaughtException",(err)=>{
 
 
 //config
-dotenv.config({path:'server/config/config.env'});
+if(process.env.NODE_ENV !== "PRODUCTION"){
+    require("dotenv").config({path:'server/config/config.env'});
+}
 
 //Connect to database
 connectDatabase();
@@ -26,7 +28,7 @@ cloudinary.config({
 
 const server=app.listen(process.env.PORT,()=>{
 
-    console.log(`Server is working on http://localhost:${process.env.Port}`)
+    console.log(`Server is working on http://localhost:${process.env.PORT}`)
 })
 
 
