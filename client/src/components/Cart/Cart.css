@@ -149,6 +149,16 @@
     background-color: #21262d;
   }
   @media screen and (max-width: 600px) {
+    .emptyCart> svg {
+      font-size: 10vmax;
+    }
+    .emptyCart>p {
+      font-size: 3.5vmax;
+    }
+    .emptyCart>a {
+      font-size: 2.1vmax;
+      margin-top: 3vmax;
+    }
     .cartPage {
       padding: 1vmax;
       min-height: 60vh;
